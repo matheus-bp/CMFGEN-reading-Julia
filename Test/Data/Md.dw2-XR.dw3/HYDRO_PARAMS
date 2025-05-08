@@ -1,0 +1,16 @@
+2.25       [LOG_G]
+1.25299    [MU_ATOM]
+1.35       [TEFF]
+T          [OLD_MOD]
+F          [OLD_V]
+T          [WIND_PRES]
+1.0D+08    [ATOM_DEN]
+300.0D0    [MAX_R]
+1.00E-8    [MDOT]
+260        [VINF] 
+2.0        [BETA]
+358.4036   [CON_R]
+341.33684  [REF_R] !  49.044056801371774
+324.269996 [RSTAR]
+10.0D0     [CON_V]
+

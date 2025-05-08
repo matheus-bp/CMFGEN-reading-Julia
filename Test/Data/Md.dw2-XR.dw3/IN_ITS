@@ -1,0 +1,5 @@
+150         [NUM_ITS]               !Numer of iterations?
+F          [DO_LAM_IT]             !Do lambda iterations?
+T          [DO_AUTO_LAM]
+T          [DO_GT_AUTO]
+F          [DO_T_AUTO]

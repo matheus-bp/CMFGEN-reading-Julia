@@ -1,0 +1,17 @@
+Machine name is :
+Linux zhakul 5.10.0-23-amd64 #1 SMP Debian 5.10.179-2 (2023-07-14) x86_64 GNU/Linux
+ 
+Program started on:
+Tue 29 Apr 2025 08:48:41 PM CEST
+ 
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Program finished on:
+Tue 29 Apr 2025 08:59:57 PM CEST
+ 
+ 
+Continuum calculation started on:
+Tue 29 Apr 2025 08:59:58 PM CEST
+ 
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Program finished on:
+Tue 29 Apr 2025 09:01:13 PM CEST

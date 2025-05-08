@@ -1,0 +1,90 @@
+  1.00000E+03     [VSM_DIE]            Sigma of Gaussian used for dielectronic lines that are read in
+  3.00000E+03     [SIG_GAU_KMS]        Sigma of Gaussian used to smooth photoionization data
+  3.49897E-03     [MIN_CF]             Minimum continuum frequency if calculating NU
+  1.00000E+03     [MAX_CF]             Maximum continuum frequency if calculating NU
+  1.10000E+00     [FRAC_SP]            Fractional spacing for small frequencies
+  1.05000E+00     [AMP_FAC]            Amplification factor for large frequency ranges
+  1.00000E-01     [MAX_BF]             Maximum frequency spacing close to bf edge
+            T     [DO_DIS]             Allow for level dissolution of upper levels?
+  2.00000E+02     [dV_LEV]             Spacing (in km/s) on low side of bf edge for level dissolution
+  1.40000E+00     [AMP_DIS]            Amplification factor on low side bf edge
+  1.00000E-01     [MIN_DIS]            Minimum frequency for level dissolution
+            F     [CROSS]              Compute all photoionization cross-sections?
+  7.50000E+02     [V_CROSS]            Max. vel. sep. (km/s) between evaluations of all  phot. cross-sections?
+            T     [DIF]                Use Diffusion approximation at inner boundary ?
+            1     [NUM_ES]             Number of electron scattering iterations?
+            F     [COH_ES]             Assume coherent electron scattering?
+            F     [OLD_J]              Use old file to provide initial estimate of J_ES?
+       LOGMON     [METHOD]             Which method for continuum tau loglog, loglin, linear or zero ?
+       G_ONLY     [N_TYPE]             Method for to handle N for MOM_J_CMF -- N_ON_J, MIXED, or G_ONLY
+   INT/INS        [FG_OPT]             Solution options for FG_J_CMF: DIFF/INS and INT/INS
+            T     [THK_CONT]           Use thick boundary condition for continuum ?
+            T     [TRAP_J]             Use trapazoidal weights to compute J?
+
+  1.10000E+01     [VTURB_FIX]          Doppler velocity for DOP_FIX Doppler profiles (km/s)
+  1.10000E+01     [VTURB_MIN]          Minimum turbulent velocity for Doppler profile (km/s)
+  1.50000E+02     [VTURB_MAX]          Maximum turbulent velocity for Doppler profile (km/s)
+
+  6.00000E+00     [MAX_DOP]            Maximum half-width of resonance zone (in Doppler widths)
+  5.00000E-01     [FRAC_DOP]           Spacing in resonance zone (in Doppler widths)
+  2.00000E+01     [dV_CMF_PROF]        Spacing across cmf profile (in km/s)
+  5.00000E+01     [dV_CMF_WING]        Spacing across e.s. wings of cmf profile(in km/s)
+  2.50000E+03     [ES_WING_EXT]        Extent of BLUE e.s. wings from resonance core (in km/s)
+  3.00000E+00     [R_CMF_WING_EXT]     Extent of RED e.s. wings from RESONANCE core (in Vinf)
+
+  1.10000E+00     [OBS_EXT_RAT]        Half width of profile in Vinf.
+  5.00000E-01     [FRAC_DOP_OBS]       Spacing across intrinsic profile zone (in Doppler widths)
+  2.00000E+01     [dV_OBS_PROF]        Spacing across observed profile (in km/s)
+  1.00000E+02     [dV_OBS_WING]        Spacing across e.s. wings of observed profile(in km/s)
+  5.00000E+02     [dV_OBS_BIG]         Frequency spacing between lines (in km/s)
+  2.00000E+01     [TAU_MAX]            Optical depth at which observers frame integration is terminated
+  1.00000E-01     [ES_DTAU]            Maximum increments in e.s. optical depth scale
+   STAU           [INT_METH]           Integration method for computing I along ray
+            1     [N_INS_OBS]          Mininum number of points to be inserted in  observers frame grid (>= 0)
+
+            F     [FLUX_CAL_ONLY]      Compute the observers frame flux only ?
+            F     [EXT_FRM_SOL]        Extrapolate the formal solution to larger radii?
+            T     [INS_F_FRM_SOL]      Extrapolate the formal solution to larger radii?
+   INT            [FRM_OPT]            Solution options for CMF_FORM_SOL
+            F     [DO_SOB_LINES]       Compute line EWs?
+  1.00000E-02     [EW_CUT]             Output EW info only if ABS(EW) > EW_CUT
+            F     [SOB_FREQ_IN_OBS]     Allow for SOB & CMF lines in defining observers frequencies?
+            F     [WR_ETA]             Output ETA and CHI?
+            F     [WR_FLUX]            Output Flux as a function of depth?
+            F     [WR_CMF_FORCE]       Output CMF line-force multiplier as a function of depth?
+            F     [WR_SOB_FORCE]       Output SOBOLEV line-force multiplier as a function of depth?
+            F     [WR_IP]              Output I as a functio of p and frequency?
+
+   SOB            [GLOBAL_LINE]        Global switch to indicate handeling of line
+            T     [LAM_SET]            Set long wavelengths to SOBOLEV approximation
+  1.00000E+03     [F_LAM_BEG]          Inital wavelength (A) for blanketed flux calculation
+  7.00000E+03     [F_LAM_END]          Final wavelength (A) for blanketed flux calculation
+            T     [THK_LINE]           Use thick boundary condition for lines?
+            T     [CHK_L_POS]          Ensure Line opacity is positive ?
+   SRCE_CHK       [NEG_OPAC_OPT]       Method for negative opacities in BLANKETING mode
+            T     [INC_TWO]            Include two photon transitions?
+            F     [INC_RAY]            Include Rayeligh scattering?
+            F     [INC_XRAYS]          Include X-ray emission
+
+   LIST_VGT       [GLOBAL_PROF]        Global switch for intrinsic line absorption profile
+            T     [OPAC_LIMS]          Set prof limits by line to cont. ratio?
+  1.00000E-04     [DOP_LIM]            Edge limits for Doppler line profile
+  1.00000E-04     [VOIGT_LIM]          Edge limits for Voigt line profile
+
+
+            T     [JC_W_EDD]           Compute continuum intensity using Eddington factors
+            T     [JBAR_W_EDD]         Compute line continuum intensity using Eddington factors
+
+            F     [INC_GRID]           Increase grid size to improve accuracy?
+            T     [ALL_FREQ]           Increase accuracy for all frequencies?
+  3.19000E+00     [ACC_END]            Increase accuracy for all frequencies > ACC_END?
+            1     [N_INS]              Number of points to be inserted in higher accuracy grid (1, 2 or 3)
+            1     [ST_INT]             Interpolate from ?
+           80     [END_INT]            Interpolate to ?
+            5     [ND_QUAD]            Quadratic interpolation from ND-? to ND
+   LOG            [INTERP_TYPE]        Perform interpolations in LOG or LIN plane
+  1.00000E+00     [DELV_FG]            Maximum velocity separation (Doppler widths) for FG_J_CMF
+  5.00000E-01     [DELV_MOM]           Maximum velocity separation (Doppler widths) for MOM_J_CMF
+
+            F     [COMP_F]             Compute new Eddington factors (f)
+  1.00000E-04     [ACC_F]              Accuracy with which to compute the eddington factor f

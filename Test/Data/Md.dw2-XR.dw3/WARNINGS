@@ -1,0 +1,2012 @@
+
+ Reading in atomic data
+
+ Warning -- FORMAT Date not found in oscilator file:HI_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:He2_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:HeI_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:CIV_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:C2_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:NV_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:NIV_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:OV_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:NeIII_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:Ne2_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:Mg2_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:AlIII_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:Al2_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:SkIV_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:Sk2_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:SIV_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:SIII_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:CaIII_F_OSCDAT
+ ***Warning**** --- 34246 weak transitions cut in GENOSC_V9 --- FeV_F_OSCDAT
+ ***Warning**** --- 34324 weak transitions cut in GENOSC_V9 --- FeIV_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:FeIII_F_OSCDAT
+ ***Warning**** ---  3124 weak transitions cut in GENOSC_V9 --- FeIII_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:Fe2_F_OSCDAT
+ ***Warning**** ---  8362 weak transitions cut in GENOSC_V9 --- Fe2_F_OSCDAT
+ ***Warning**** ---  1541 weak transitions cut in GENOSC_V9 --- NkV_F_OSCDAT
+ ***Warning**** ---  1748 weak transitions cut in GENOSC_V9 --- NkIV_F_OSCDAT
+ ***Warning**** ---   587 weak transitions cut in GENOSC_V9 --- NkIII_F_OSCDAT
+ ***Warning**** --- 18152 weak transitions cut in GENOSC_V9 --- Nk2_F_OSCDAT
+  
+ *************** Warning -- Warning -- Warning ****************
+ Max. cont. freq may be too small in in SET_X_FREQ_V2
+ Max. cont. should generally be set to 1000 when X-rays present
+ Need to allow for ionization from inner shells. Generally can
+ ignore ionization from n=1 (=PQN) state of iron group elements
+ since these can also ionize from n=2 sate. A list of effected
+ ionization routes follows:
+
+  IZ=24    NE=23   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.44E+03
+  IZ=24    NE=22   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.45E+03
+  IZ=25    NE=24   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.58E+03
+  IZ=25    NE=23   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.58E+03
+  IZ=26    NE=25   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.72E+03
+  IZ=26    NE=24   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.72E+03
+  IZ=26    NE=23   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.72E+03
+  IZ=28    NE=27   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  2.01E+03
+  IZ=28    NE=26   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  2.01E+03
+  IZ=28    NE=25   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  2.02E+03
+
+
+ Checking whether some low ionization stages may be omitted from the model.
+ Checking whether some high ionization stages may be omitted from the model.
+   OV     may not need to be include in model. Its maximum fractional abundance is 8.18E-05 < 1.00E-04
+ Checking whether lower ionization stages need to be included in model
+   CMI    may need to be included in the model (Maximum C2 ionization fraction is 1.0E+00)
+   NeMI   may need to be included in the model (Maximum Ne2 ionization fraction is 1.0E+00)
+ 
+                   Temperature (10^4 K) is 2.709E+00
+           Atom/ion density (per cm^3)) is 2.636E+14
+                 Electrons per atom/ion is 1.001E+00
+ Total thermal kinetic energy (ev/atom) is 7.004E+00
+  Approximate internal energy (ev/atom) is 1.453E+01
+ App. missing internal energy (ev/atom) is 0.000E+00
+             Radiation energy (ev/atom) is 3.028E+01
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  32 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  55 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  44 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  46 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  33 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  55 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  46 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  33 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  55 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  55 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  47 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  55 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  47 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  55 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  47 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  55 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  48 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  55 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  48 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  55 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  59 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  55 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  59 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  55 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  60 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  54 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  60 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  54 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  60 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  60 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  60 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  47 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  51 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  47 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  51 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  47 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  54 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  54 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  54 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  25 depths.
+ He2     g.s. eq. replaced by ionization eq. at  57 depths.
+ C2      g.s. eq. replaced by ionization eq. at  65 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  40 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  29 depths.
+ O2      g.s. eq. replaced by ionization eq. at  65 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  39 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  54 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  34 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  25 depths.
+ He2     g.s. eq. replaced by ionization eq. at  56 depths.
+ C2      g.s. eq. replaced by ionization eq. at  65 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  40 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  29 depths.
+ O2      g.s. eq. replaced by ionization eq. at  63 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  40 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  35 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  25 depths.
+ He2     g.s. eq. replaced by ionization eq. at  55 depths.
+ C2      g.s. eq. replaced by ionization eq. at  65 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  39 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  29 depths.
+ O2      g.s. eq. replaced by ionization eq. at  63 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  40 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  35 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  25 depths.
+ He2     g.s. eq. replaced by ionization eq. at  55 depths.
+ C2      g.s. eq. replaced by ionization eq. at  65 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  39 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  29 depths.
+ O2      g.s. eq. replaced by ionization eq. at  63 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  40 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  35 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  25 depths.
+ He2     g.s. eq. replaced by ionization eq. at  55 depths.
+ C2      g.s. eq. replaced by ionization eq. at  65 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  39 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  29 depths.
+ O2      g.s. eq. replaced by ionization eq. at  63 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  40 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  35 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  35 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  25 depths.
+ He2     g.s. eq. replaced by ionization eq. at  55 depths.
+ C2      g.s. eq. replaced by ionization eq. at  65 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  39 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  29 depths.
+ O2      g.s. eq. replaced by ionization eq. at  63 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  40 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  56 depths.
+ HeI     g.s. eq. replaced by ionization eq. at  35 depths.
+ He2     g.s. eq. replaced by ionization eq. at  70 depths.
+ C2      g.s. eq. replaced by ionization eq. at  70 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  53 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  28 depths.
+ O2      g.s. eq. replaced by ionization eq. at  70 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  46 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  25 depths.
+ He2     g.s. eq. replaced by ionization eq. at  55 depths.
+ C2      g.s. eq. replaced by ionization eq. at  65 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  39 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  29 depths.
+ O2      g.s. eq. replaced by ionization eq. at  63 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  40 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ HI      g.s. eq. replaced by ionization eq. at  25 depths.
+ He2     g.s. eq. replaced by ionization eq. at  55 depths.
+ C2      g.s. eq. replaced by ionization eq. at  65 depths.
+ CIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ CIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NI      g.s. eq. replaced by ionization eq. at  39 depths.
+ N2      g.s. eq. replaced by ionization eq. at  70 depths.
+ NIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ NIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ NV      g.s. eq. replaced by ionization eq. at  70 depths.
+ OI      g.s. eq. replaced by ionization eq. at  29 depths.
+ O2      g.s. eq. replaced by ionization eq. at  63 depths.
+ OIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ OIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ OV      g.s. eq. replaced by ionization eq. at  70 depths.
+ Ne2     g.s. eq. replaced by ionization eq. at  40 depths.
+ NeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Mg2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MgIII   g.s. eq. replaced by ionization eq. at  47 depths.
+ Al2     g.s. eq. replaced by ionization eq. at  70 depths.
+ AlIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Sk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ SkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ PIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ PV      g.s. eq. replaced by ionization eq. at  70 depths.
+ SIII    g.s. eq. replaced by ionization eq. at  70 depths.
+ SIV     g.s. eq. replaced by ionization eq. at  70 depths.
+ SV      g.s. eq. replaced by ionization eq. at  70 depths.
+ CaIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ Cr2     g.s. eq. replaced by ionization eq. at  68 depths.
+ CrIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ CrIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Mn2     g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ MnIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ Fe2     g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ FeIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ FeV     g.s. eq. replaced by ionization eq. at  70 depths.
+ Nk2     g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIII   g.s. eq. replaced by ionization eq. at  70 depths.
+ NkIV    g.s. eq. replaced by ionization eq. at  70 depths.
+ NkV     g.s. eq. replaced by ionization eq. at  70 depths.
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ 
+
+ Begin COMP_GREY_V4    70    15    85
+ 
+
+
+  Equation selection in generate_full_matrix_v3.f
+
+ 
+
+
+ Checking whether some low ionization stages may be omitted from the model.
+ Checking whether some high ionization stages may be omitted from the model.
+   CIV    may not need to be include in model. Its maximum fractional abundance is 5.66E-05 < 1.00E-04
+   NV     may not need to be include in model. Its maximum fractional abundance is 1.95E-07 < 1.00E-04
+   OIV    may not need to be include in model. Its maximum fractional abundance is 5.42E-05 < 1.00E-04
+   OV     may not need to be include in model. Its maximum fractional abundance is 4.25E-08 < 1.00E-04
+   SV     may not need to be include in model. Its maximum fractional abundance is 6.57E-06 < 1.00E-04
+   NkV    may not need to be include in model. Its maximum fractional abundance is 2.09E-05 < 1.00E-04
+ Checking whether lower ionization stages need to be included in model
+   CMI    may need to be included in the model (Maximum C2 ionization fraction is 1.0E+00)
+   NeMI   may need to be included in the model (Maximum Ne2 ionization fraction is 1.0E+00)
+ 
+                   Temperature (10^4 K) is 2.709E+00
+           Atom/ion density (per cm^3)) is 2.636E+14
+                 Electrons per atom/ion is 1.001E+00
+ Total thermal kinetic energy (ev/atom) is 7.004E+00
+  Approximate internal energy (ev/atom) is 1.453E+01
+ App. missing internal energy (ev/atom) is 0.000E+00
+             Radiation energy (ev/atom) is 3.028E+01
