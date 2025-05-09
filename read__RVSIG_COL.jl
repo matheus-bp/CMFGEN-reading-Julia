@@ -10,21 +10,21 @@ function read__rvsig_col(filename::String)::DataFrame
     lines = readlines(filename)
     
     # Find the line containing "Number of depth points"
-    header_line = findfirst(line -> occursin(r"^\s*\d+\s*!Number of depth points", line), lines)
+    header_line_n = findfirst(line -> occursin(r"^\s*\d+\s*!Number of depth points", line), lines)
     
-    if header_line === nothing
+    if header_line_n === nothing
         error("Could not find the line containing 'Number of depth points'")
     end
     
     # The column headers are on the line after the "Number of depth points" line
     # (e.g., "!    R(10^10cm)       V(km/s)         Sigma           Tau     Index")
-    column_header_line = lines[header_line + 1]
+    column_header_line = lines[header_line_n + 2]
     
     # Extract column names (skip the "!" and split into words)
     column_names = split(strip(replace(column_header_line, "!" => "")))
     
     # The data starts two lines after the header
-    data_start = header_line + 2
+    data_start = header_line_n + 3
     
     if data_start > length(lines)
         error("No data found after the header")
@@ -41,9 +41,11 @@ function read__rvsig_col(filename::String)::DataFrame
         values = [tryparse(Float64, x) for x in tokens]  # Parse numbers (Float64)
         push!(data, values)
     end
+
+    ncols = length(column_names)
+    data_columns = [getindex.(data, i) for i in 1:ncols]
     
-    # Convert into a DataFrame
-    df = DataFrame(data, column_names)
+    df =  DataFrame([col => data for (col, data) in zip(column_names, data_columns)])
     
     return df
 end
